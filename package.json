@@ -1,0 +1,18 @@
+{
+  "name": "babel-plugin-meteor-tracker-patch-async-await",
+  "version": "1.0.0",
+  "description": "This babel plugin tries to alleviate problems with MeteorJS Trackers' autoruns & reactive code when used together with async / await.",
+  "main": "babel-plugin-meteor-tracker-patch-async-await.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "meteorjs",
+    "babel",
+    "tracker",
+    "async",
+    "await"
+  ],
+  "author": "Daniel Dornhardt",
+  "license": "ISC"
+}
