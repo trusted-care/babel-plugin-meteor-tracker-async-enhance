@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-meteor-tracker-async-enhance",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This babel plugin tries to alleviate problems with MeteorJS Trackers' autoruns & reactive code when used together with async / await.",
   "main": "babel-plugin-meteor-tracker-async-enhance.js",
   "repository": {

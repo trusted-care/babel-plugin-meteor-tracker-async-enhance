@@ -167,6 +167,12 @@ Eg. we're using a `.babelrc` file in our meteor project dir looking like this:
         "plugins": ["babel-plugin-meteor-tracker-async-enhance"]
     }
 
+
+
+You can verify that the plugin is transforming your client code by using eg. the chrome inspector and turning off the "Enable JavaScript source maps" in the preferences pane.
+
+If you then visit your apps' bundled .js file, you should be able to find instances of `____secretCurrentComputation____` throughout the code.
+
 ## Future optimizations and improvement ideas:
 
 - Only add the additional code to async functions actually containing awaits in their code, otherwise it's not necessary.
