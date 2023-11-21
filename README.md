@@ -1,4 +1,4 @@
-# Meteor Tracker - Await Enhance Babel Plugin for the Client 🍝
+# Meteor Tracker-Async-Enhance Babel Plugin for the Client 🍝
 
 **This plugin allows you to keep your client side code reactive even when using multiple - and nested - `await` statements inside `Tracker.autorun` contexts.**
 
