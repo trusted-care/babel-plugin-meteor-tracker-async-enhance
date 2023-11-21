@@ -123,8 +123,7 @@ This probably doesn't work:
         const myVal = reactiveVar.get()
     })
 
-
-What is still missing?
+## What is still missing?
 
 - doesn't work with multiple awaits in a single expression (line) yet. The async function(s) called after the initial await will not have
   the context. Can be mitigated by not using multiple awaits in a single line / expression.
@@ -149,6 +148,24 @@ What is still missing?
 - doesn't work with regular old Promise - objects yet. Promise-Objects could be monkey-patched by overriding their constructor
   though I think.
 
+
+## Installation
+
+1. Add the plugin to your app:
+
+
+    meteor npm install --save-dev babel-plugin-meteor-tracker-async-enhance
+
+
+2. Add the plugin to your babel configs' `plugins` array.
+
+Eg. we're using a `.babelrc` file in our meteor project dir looking like this:
+
+
+    {
+        "presets": ["@babel/preset-env"],
+        "plugins": ["babel-plugin-meteor-tracker-async-enhance"]
+    }
 
 ## Future optimizations and improvement ideas:
 
